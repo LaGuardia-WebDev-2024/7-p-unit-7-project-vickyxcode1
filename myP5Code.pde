@@ -5,11 +5,28 @@ void setup() {
 
 //🎯Variable Declarations Go Here
 var fireworkX = 20;
+var pupilsize=50;
+var pupilsize2=70
+var pupilplane=105
 
 //🟢Draw Procedure - Runs on Repeat
 draw = function(){
  
-  background(255,255,255,0);
+  background(255,255,255,);
+  fill(255,255,255)
+  ellipse(196,200,350,350);
+    ellipse(130,200,100,150);
+    line(78,330,182,330);
+fill(0,0,0)
+        ellipse(pupilplane,200,pupilsize,pupilsize2);
+    
+    
+  
+  
+  
+  
+  
+  
   
    if(mousePressed){
     showXYPositions();
@@ -17,9 +34,17 @@ draw = function(){
   }
   
   //🎯Animation Code Goes Here
-  rect(fireworkX, 15, 10, 10);
+
   
   fireworkX = fireworkX + 1;
+  if(pupilsize > 3){
+pupilsize=pupilsize-1
+pupilsize2=pupilsize2-1  
+
+  }
+  else{
+  if(pupilplane< 175){pupilplane+=1}
+  }
 
 }
 
