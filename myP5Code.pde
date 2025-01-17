@@ -20,7 +20,7 @@ draw = function(){
 fill(0,0,0)
         ellipse(pupilplane,200,pupilsize,pupilsize2);
     
-    
+    text("*side eye*", 266, 218);
   
   
   
